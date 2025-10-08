@@ -1,62 +1,96 @@
-# Pokémon Data Analysis 📊
-An exploratory data analysis (EDA) project on the classic Pokémon dataset. This repository contains a Jupyter Notebook that dives into the world of Pokémon, uncovering insights and patterns through data visualization and statistical analysis.
+# Data Analytics on Deepfake and Misinformation
 
-## About The Project
-The goal of this project is to explore the characteristics of Pokémon from the first 6 generations. By analyzing their stats, types, and other attributes, we aim to answer questions like:
-- What are the most common Pokémon types?
-- Who are the strongest Pokémon based on their total stats?
-- Is there a correlation between different stats (e.g., Attack and Defense)?
-- How do Legendary Pokémon differ from regular ones?
-- What is the distribution of stats like HP, Attack, Defense, etc.?
+[![Competition](https://img.shields.io/badge/VizQuest%203.0-IIM%20Nagpur-blue)](https://www.iimnagpur.ac.in/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Key Analysis & Visualizations
-The analysis is performed in the Pokemon_Analysis.ipynb Jupyter Notebook and includes:
-- Data Cleaning and Preprocessing: Handling missing values and preparing the data for analysis.
-- Type Distribution: Visualizing the frequency of each Pokémon type (Primary and Secondary).
-- Stat Distribution: Histograms and box plots to show the distribution of core stats (HP, Attack, Defense, Sp. Atk, Sp. Def, Speed).
-- Strongest Pokémon: Identifying the top Pokémon by their "Total" stat value.
-- Correlation Matrix: A heatmap to visualize the relationships between different numerical stats.
-- Legendary vs. Non-Legendary: Comparing the stat distributions between Legendary and non-Legendary Pokémon to see what sets them apart.
+An in-depth analysis of deepfake and misinformation trends, submitted for the **VizQuest 3.0 Data Analytics Competition** hosted by IIM Nagpur. This project explores a comprehensive dataset to uncover patterns in content, platform engagement, and regional distribution of flagged misinformation.
 
-## Dataset
-This analysis uses the "Pokemon with stats" dataset, which is a popular dataset for beginners in data science. It contains information on 800 Pokémon, including:
-- `Name`: The name of the Pokémon.
-- `Type 1 & Type 2`: The primary and secondary elemental types.
-- `Stats`: HP, Attack, Defense, Special Attack, Special Defense, and Speed.
-- `Total`: The sum of all base stats.
-- `Generation`: The generation number the Pokémon was introduced in.
-- `Legendary`: A boolean indicating if the Pokémon is Legendary.
-  
-## 🛠️ Getting Started
-To run this analysis on your local machine, follow these steps.
+## Table of Contents
 
-### Prerequisites
-Ensure you have Python 3 and pip installed.
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Dataset Highlights](#dataset-highlights)
+- [Technology Stack](#technology-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Key Findings](#key-findings)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-#### Installation
+## Overview
 
-Clone the repository:
-```bash
-git clone [https://github.com/smusab9152/Pokemon_Data_Analysis.git]
-```
-Navigate to the project directory:
-```bash
-cd Pokemon_Data_Analysis
-```
-Install the required libraries:
-(It is recommended to use a virtual environment.)
-```bash
-pip install pandas numpy matplotlib seaborn jupyterlab
-```
-Launch Jupyter:
-```bash
-jupyter lab
-```
-This will open a new tab in your browser. You can then open and run the Pokemon_Analysis.ipynb notebook.
+This repository contains our project for the **VizQuest 3.0-IIM Nagpur Data Analytics Competition 2024**. Our analysis focuses on understanding trends, patterns, and key insights from the provided deepfake and misinformation dataset. By leveraging data wrangling, statistical analysis, and advanced visualization techniques, we aim to provide actionable insights for combating the spread of false information.
 
-## Tools & Libraries Used
-- Python
-- Jupyter Notebook
-- Pandas: For data manipulation and analysis.
-- NumPy: For numerical operations.
-- Matplotlib & Seaborn: For creating insightful data visualizations.
+## Key Features
+
+-   **Data Wrangling**: Comprehensive cleaning, transformation, and normalization of raw data to prepare it for analysis.
+-   **Engagement Analysis**: Measurement and interpretation of likes, shares, and comments to understand user behavior patterns.
+-   **Correlation Studies**: Examination of the relationships between flagged content, platforms, regions, and detection methods.
+-   **Actionable Insights**: Data-driven recommendations for platforms and policymakers to combat misinformation effectively.
+
+## Dataset Highlights
+
+-   **Content Types**: Analysis across Text, Images, and Videos.
+-   **Platforms**: Covers major social networks including WhatsApp, Facebook, Reddit, Instagram, and YouTube.
+-   **Regions**: Global scope with data from Asia, Europe, Africa, Oceania, North America, and South America.
+-   **Metrics**: Includes engagement metrics (likes, shares, comments), spread rates, and various detection methods.
+
+## Technology Stack
+
+-   **Programming Language**: Python
+-   **Core Libraries**: Pandas, NumPy, Scikit-learn
+-   **Data Visualization**: Matplotlib, Seaborn
+-   **Dashboarding Tools**: Tableau, Power BI
+-   **Analytical Techniques**:
+    -   Data Normalization (Min-Max Scaling)
+    -   Heatmaps, Sankey Diagrams, and Contour Plots for visualization
+    -   Regression and Correlation Analysis
+
+## Installation
+
+To get a local copy up and running, follow these simple steps.
+
+1.  Clone the repo
+    ```sh
+    git clone https://github.com/smusab9152/Data_Analytics_on_Deepfake_and_Information_Dataset.git
+    ```
+2.  Install required packages
+    ```sh
+    pip install pandas numpy matplotlib seaborn scikit-learn
+    ```
+
+## Usage
+
+The core analysis is contained within the Jupyter notebooks.
+
+1.  Open the notebooks in a Jupyter environment.
+2.  Run the cells sequentially to reproduce the analysis.
+3.  The final datasets and visualizations are saved in the `output` directory.
+
+## Key Findings
+
+1.  **Platform Disparities**: WhatsApp, Reddit, and Facebook show the highest volume of flagged content.
+2.  **Regional Hotspots**: Asia leads in the amount of flagged content, whereas Africa reports the least.
+3.  **Content Engagement**: Videos generate the highest user engagement, while text-based content is the most frequently flagged.
+4.  **Detection Methods**: AI-based detection is predominant but is associated with a significant number of false positives.
+5.  **Topical Trends**: Climate change and celebrity-related news are the most flagged high-impact topics.
+
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Acknowledgements
+
+-   IIM Nagpur for organizing the VizQuest 3.0 competition.
+-   All data providers and sources that made this analysis possible.
